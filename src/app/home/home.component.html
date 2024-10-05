@@ -1,1 +1,11 @@
 <p>home works!</p>
+
+<div class="posts-container">
+    <div *ngFor="let post of posts" class="post-card">
+      <img [src]="post.imageUrl" alt="{{ post.title }}" class="post-image" />
+      <h2>{{ post.title }}</h2>
+      <p><small>{{ post.date }}</small></p>
+      <p>{{ post.description }}</p>
+      <a [routerLink]="['/post', post.id]" class="read-more">Czytaj więcej</a>
+    </div>
+  </div>
