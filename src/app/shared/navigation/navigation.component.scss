@@ -1,0 +1,33 @@
+/* Resetowanie domyślnych stylów */
+nav {
+    background-color: #007bff; /* Kolor tła nawigacji */
+    padding: 10px 20px; /* Wewnętrzne odstępy */
+  }
+  
+  .nav-links {
+    list-style: none; /* Usunięcie punktów z listy */
+    display: flex; /* Ustawienie elementów w wierszu */
+    justify-content: flex-start; /* Wyrównanie do lewej */
+    margin: 0; /* Usunięcie marginesów */
+    padding: 0; /* Usunięcie wewnętrznych odstępów */
+  }
+  
+  .nav-links li {
+    margin-right: 20px; /* Odstęp między linkami */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Usunięcie podkreślenia z linków */
+    color: white; /* Kolor tekstu linków */
+    font-weight: bold; /* Pogrubienie tekstu */
+    transition: color 0.3s; /* Animacja zmiany koloru */
+  }
+  
+  .nav-links a:hover {
+    color: #ffdd57; /* Zmiana koloru linku podczas najechania */
+  }
+  
+  .nav-links a.active {
+    border-bottom: 2px solid #ffdd57; /* Podkreślenie aktywnego linku */
+  }
+  
